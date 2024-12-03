@@ -1,0 +1,25 @@
+img{
+    width: 100px;
+    height: 150px;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+#item1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+#item2{
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+}
+
+#item3{
+    position: relative;
+    top: 10%;
+}

@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.container img{
+    border: 3px solid red;
+}
+
+.container .content{
+    border: 3px solid green;
+    width: 500px;
+}

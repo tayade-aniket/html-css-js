@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", serif;
+}
+/* 
+a{
+    font-family: "Inter", sans-serif;
+} */
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    padding: 20px 5%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header .contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h3{
+    font-size: 1.5rem
+}
+
+.logo h3 span{
+    color: orangered;
+}
+
+.links a{
+    padding: 8px 20px;
+    font-size: 1.1rem;
+}
+
+
+.links a:hover{
+    background-color: orangered;
+    border-radius: 25px;
+}
+
+.auth button{
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    background: #ffffff;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    font-size: 1.05rem;
+}
+
+.auth #active{
+    background: orangered;
+    color: #ffffff;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 390px) {
+    .header{
+        height: 400px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .links a{
+        display: block;
+        text-align: center;
+    }
+    .auth button{
+        text-align: center;
+        display: block;
+        padding: 4px 130px;
+        margin-bottom: 10px;
+    }
+}

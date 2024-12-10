@@ -1,0 +1,46 @@
+body{
+    margin: 3% 5%;
+}
+
+
+div{
+    width: 100px;
+    height: 100px;
+    background: green;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.3rem; 
+}
+
+.box2{
+    background-color: crimson;
+    position: absolute;
+    top: 5%;
+    z-index: -1;
+}
+/* 
+@keyframes anime {
+    0%{
+        transform: translate(0px,0px);
+        background-color: red;
+    }
+    25%{
+        transform: translate(30%,20%);
+        background-color: crimson;
+    }
+    50%{
+        transform: translate(60%,40%);
+        background-color: orangered;
+        
+    }
+    75%{
+        transform: translate(100%,80%);
+        background-color: orange;
+
+    }
+    100%{
+        transform: translate(130%,100%);
+        background-color: blueviolet;
+    }
+} */

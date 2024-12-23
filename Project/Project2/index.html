@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!--Custom CSS  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Recipe Book</h1>
+
+        <form>
+          <input
+            class="searchBox"
+            type="text"
+            placeholder="Search for the Recipes..."
+          />
+          <input class="searchBtn" type="submit" value="Search" />
+        </form>
+      </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="recipe-container">
+                <h2>Search for your fevourite Recipes or click the search button to get default ....</h2>
+            </div>
+
+            <div class="recipe-details">
+                <button class="recipe-close-btn">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+
+                <div class="recipe-details-content">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- custom JS -->
+     <script src="main.js"></script>
+  </body>
+</html>

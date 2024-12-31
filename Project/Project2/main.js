@@ -40,3 +40,60 @@ const fetchRecipes = async (query) => {
         console.log(error);
     }
 }
+
+// function to fetch ingredients
+const fetchIngredients = (recipe) => {
+    let ingredientsList = "";
+    for(let i = 1; i <= 20; i++){
+        const ingredient = recipe.ingredients[i];
+        if(ingredient){
+            ingredientsList += `<li>${ingredient}</li>`;
+        }else{
+            break;
+        }
+    }
+
+    return ingredientsList;
+}
+
+// function to fetch instructions
+const fetchInstructions = (recipe) =>{
+    let instructionList = "";
+    for(let i = 1; i <= 20; i++){
+        const instruction = recipe.instructions[i];
+        if(instruction){
+            instructionList += `<li>${instruction}</li>`;
+        }else{
+            break;
+        }
+    }
+    return instructionList;
+}
+
+const openRecipePopup = (recipe) => {
+    recipeDetailsContent.innerHTML = `
+        <h2 class="recipeName">${recipe.name}</h2>
+        <h3 class="ingredientName">Ingredients: </h3>
+        <ol class="ingredientList">
+            ${fetchIngredients(recipe)}
+        </ol>
+        <div class="recipeInstruction">
+            <h3>Instructions: </h3>
+            <ol>
+                ${fetchInstructions(recipe)}
+            </ol>
+        </div>
+    `;
+
+    recipeDetailsContent.parentElement.style.display = "block";
+};
+
+recipeCloseBtn.addEventListener("click", () => {
+    recipeDetailsContent.parentElement.style.display = "none";
+});
+
+searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const searchInput = searchBox.value.trim();
+    fetchRecipes(searchInput);
+})

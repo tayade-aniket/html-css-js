@@ -78,6 +78,130 @@ form input[type="submit"]:hover{
     place-items: center;
 }
 
+.recipe{
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    color: var(--dark);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1), -5px -5px 10px rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
 
 
+.recipe:hover{
+    transform: scale(1.02);
+}
 
+.recipe img{
+    height: 300px;
+}
+
+.recipe h3{
+    font-size: 1.1rem;
+    margin-block: 5px;
+}
+
+.recipe button{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: var(--green);
+    color: var(--light);
+    border: none;
+}
+
+.recipe p{
+    font-size: 0.9rem;
+    color: var(--grey);
+    margin: 5px 0;
+}
+
+.recipe-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--lightdark);
+    border-radius: 10px;
+    width: 40%;
+    height: 60%;
+    font-size: 1.1rem;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+
+.recipe-details-content{
+    padding: 30px;
+}
+
+.recipeName{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.ingredientName, .recipeInstruction h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.ingredientList, .recipeInstruction li{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.ingredientList, .recipeInstruction{
+    margin-bottom: 20px;
+}
+
+.recipe-close-btn{
+    border: none;
+    font-size: 1.1rem;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: var(--light);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* styling for scrollbar */
+.recipe-details::-webkit-scrollbar{
+    width: 10px;
+}
+
+.recipe-details::-webkit-scrollbar-thumb{
+    background: var(--orange);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--light);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--dark);
+}
